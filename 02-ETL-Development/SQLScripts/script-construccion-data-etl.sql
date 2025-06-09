@@ -54,6 +54,21 @@ ventas_precio_unitario decimal(15,2) not null,
 ventas_descuento decimal
 );
 
+CREATE TABLE [dbo].[Stage_Tiempo](
+	[Tiempo_Skey] [int] IDENTITY(1,1) NOT NULL,
+	[Tiempo_FechaActual] [datetime] NOT NULL,
+	[Tiempo_Anio] [int] NOT NULL,
+	[Tiempo_Trimestre] [int] NOT NULL,
+	[Tiempo_Mes] [int] NOT NULL,
+	[Tiempo_Semana] [int] NOT NULL,
+	[Tiempo_DiaDeAnio] [int] NOT NULL,
+	[Tiempo_DiaDeMes] [int] NOT NULL,
+	[Tiempo_DiaDeSemana] [int] NOT NULL
+) ON [PRIMARY]
+GO
+
+
+
 use datamart_nortwind
 
 create table dim_cliente(

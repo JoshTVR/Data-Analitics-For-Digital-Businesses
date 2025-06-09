@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="01-stage-employee"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{CEA8A415-0A69-44A0-AF8B-0FBA941EC5EE}">
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{FCD13629-B149-4ED5-8A4D-0F1D799D50A3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1352,9 +1352,25 @@ Northwind.dbo.Employees;</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="156,41.6"
+          Id="Package\Upload-Stage-Employee\Stage-Empleado"
+          TopLeft="519.999971588454,303.333331513273" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Upload-Stage-Employee\Data Conversion"
+          TopLeft="29.9999983608724,212.333331856794" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Upload-Stage-Employee\Order-Empleado"
+          TopLeft="476.666640622749,160.333332218395" />
+        <NodeLayout
           Size="177.6,41.6"
           Id="Package\Upload-Stage-Employee\Employee_Northwind"
           TopLeft="78.3333290533887,36.3999997468789" />
+        <NodeLayout
+          Size="224,41.6"
+          Id="Package\Upload-Stage-Employee\Left-Joins-Employee-Empleado"
+          TopLeft="242.499986750385,207.999998553594" />
         <NodeLayout
           Size="157.6,41.6"
           Id="Package\Upload-Stage-Employee\Employee_Stage"
@@ -1364,69 +1380,37 @@ Northwind.dbo.Employees;</property>
           Id="Package\Upload-Stage-Employee\Order-Employees"
           TopLeft="81.6666622045969,148.199998969436" />
         <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Upload-Stage-Employee\Order-Empleado"
-          TopLeft="476.666640622749,160.333332218395" />
-        <EdgeLayout
-          Id="Package\Upload-Stage-Employee.Paths[OLE DB Source Output]"
-          TopLeft="555.699973910551,103.999999566078">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,56.3333326523172"
-              Start="0,0"
-              End="0,48.8333326523172">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.8333326523172" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Upload-Stage-Employee.Paths[OLE DB Source Output1]"
-          TopLeft="164.399995628993,77.999999746879">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,70.1999992225568"
-              Start="0,0"
-              End="0,62.6999992225568">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,62.6999992225568" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="224,41.6"
-          Id="Package\Upload-Stage-Employee\Left-Joins-Employee-Empleado"
-          TopLeft="235.833320447969,226.199998427033" />
-        <NodeLayout
           Size="153.6,41.6"
           Id="Package\Upload-Stage-Employee\Conditional Split"
           TopLeft="254.166652779613,300.733331242071" />
-        <NodeLayout
-          Size="156,41.6"
-          Id="Package\Upload-Stage-Employee\Stage-Empleado"
-          TopLeft="519.999971588454,303.333331513273" />
-        <NodeLayout
-          Size="156,41.6"
-          Id="Package\Upload-Stage-Employee\Data Conversion"
-          TopLeft="29.9999983608724,212.333331856794" />
+        <EdgeLayout
+          Id="Package\Upload-Stage-Employee.Paths[Sort Output1]"
+          TopLeft="476.666640622749,181.133332218395">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-122.166653872364,26.8666663351986"
+              Start="0,0"
+              End="-122.166653872364,19.3666663351986">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-118.166653872364,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-118.166653872364,0"
+                    Point2="-122.166653872364,0"
+                    Point3="-122.166653872364,4" />
+                  <mssgle:LineSegment
+                    End="-122.166653872364,19.3666663351986" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Upload-Stage-Employee.Paths[Sort Output]"
           TopLeft="161.666662204597,189.799998969436">
@@ -1462,31 +1446,19 @@ Northwind.dbo.Employees;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Upload-Stage-Employee.Paths[Sort Output1]"
-          TopLeft="554.266640622749,201.933332218395">
+          Id="Package\Upload-Stage-Employee.Paths[OLE DB Source Output1]"
+          TopLeft="164.399995628993,77.999999746879">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-206.433320174781,24.266666208638"
+              EndConnector="0,70.1999992225568"
               Start="0,0"
-              End="-206.433320174781,16.766666208638">
+              End="0,62.6999992225568">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,8.13333310431901" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,8.13333310431901"
-                    Point2="0,12.133333104319"
-                    Point3="-4,12.133333104319" />
-                  <mssgle:LineSegment
-                    End="-202.433320174781,12.133333104319" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-202.433320174781,12.133333104319"
-                    Point2="-206.433320174781,12.133333104319"
-                    Point3="-206.433320174781,16.133333104319" />
-                  <mssgle:LineSegment
-                    End="-206.433320174781,16.766666208638" />
+                    End="0,62.6999992225568" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1496,31 +1468,19 @@ Northwind.dbo.Employees;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Upload-Stage-Employee.Paths[Data Conversion Output]"
-          TopLeft="185.999998360872,233.133331856794">
+          Id="Package\Upload-Stage-Employee.Paths[OLE DB Source Output]"
+          TopLeft="555.699973910551,103.999999566078">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="49.8333220870962,13.8666665702395"
+              EndConnector="0,56.3333326523172"
               Start="0,0"
-              End="42.3333220870962,13.8666665702395">
+              End="0,48.8333326523172">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="20.9166610435481,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="20.9166610435481,0"
-                    Point2="24.9166610435481,0"
-                    Point3="24.9166610435481,4" />
-                  <mssgle:LineSegment
-                    End="24.9166610435481,9.86666657023949" />
-                  <mssgle:CubicBezierSegment
-                    Point1="24.9166610435481,9.86666657023949"
-                    Point2="24.9166610435481,13.8666665702395"
-                    Point3="28.9166610435481,13.8666665702395" />
-                  <mssgle:LineSegment
-                    End="42.3333220870962,13.8666665702395" />
+                    End="0,48.8333326523172" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1531,38 +1491,36 @@ Northwind.dbo.Employees;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Upload-Stage-Employee.Paths[Merge Join Output]"
-          TopLeft="347.833320447969,267.799998427033">
+          TopLeft="354.499986750385,249.599998553594">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-16.8666676683557,32.9333328150379"
+              EndConnector="-23.5333339707722,51.1333326884775"
               Start="0,0"
-              End="-16.8666676683557,25.4333328150379">
+              End="-23.5333339707722,43.6333326884775">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,12.4666664075189" />
+                    End="0,21.5666663442387" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,12.4666664075189"
-                    Point2="0,16.4666664075189"
-                    Point3="-4,16.4666664075189" />
+                    Point1="0,21.5666663442387"
+                    Point2="0,25.5666663442387"
+                    Point3="-4,25.5666663442387" />
                   <mssgle:LineSegment
-                    End="-12.8666676683557,16.4666664075189" />
+                    End="-19.5333339707722,25.5666663442387" />
                   <mssgle:CubicBezierSegment
-                    Point1="-12.8666676683557,16.4666664075189"
-                    Point2="-16.8666676683557,16.4666664075189"
-                    Point3="-16.8666676683557,20.4666664075189" />
+                    Point1="-19.5333339707722,25.5666663442387"
+                    Point2="-23.5333339707722,25.5666663442387"
+                    Point3="-23.5333339707722,29.5666663442387" />
                   <mssgle:LineSegment
-                    End="-16.8666676683557,25.4333328150379" />
+                    End="-23.5333339707722,43.6333326884775" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-16.4333338341779,21.4666664075189,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1585,13 +1543,48 @@ Northwind.dbo.Employees;</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0.160428935670474,5,104.4124609375,16"
+              BoundingBox="9.02908127942049,5,86.67515625,11.609375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Upload-Stage-Employee.Paths[Data Conversion Output]"
+          TopLeft="185.999998360872,230.966665205194">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="56.4999883895129,0"
+              Start="0,0"
+              End="48.9999883895129,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="48.9999883895129,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Upload-Stage-Employee\Stage-Empleado">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Upload-Stage-Employee\Employee_Northwind">
     <Properties>
@@ -1607,19 +1600,6 @@ Northwind.dbo.Employees;</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Upload-Stage-Employee\Employee_Stage">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Upload-Stage-Employee\Stage-Empleado">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
