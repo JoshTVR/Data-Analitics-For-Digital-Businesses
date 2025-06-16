@@ -1,6 +1,8 @@
 # Analítica de Datos para Negocios Digitales
 
-> [!IMPORTANT] > **Repositorio académico y profesional**
+> [!IMPORTANT]
+>
+> **Repositorio académico y profesional**
 > Universidad Tecnológica de Tula-Tepeji – Ingeniería en Entornos Virtuales y Negocios Digitales
 
 ---
@@ -74,15 +76,15 @@ El repositorio también incluye notebooks y scripts para:
 ## ¿Cómo usar este repositorio?
 
 1. **Clona o descarga el repositorio** para explorar la documentación y los ejemplos.
-2. Accede a la carpeta `/docs/` y sigue la secuencia de archivos `.md` para entender el ciclo completo de integración ETL.
-3. Consulta los notebooks y scripts en `/src/` para ejemplos prácticos de análisis de datos en Python.
+2. Accede a la carpeta `/Documentation/` y sigue la secuencia de archivos `.md` para entender el ciclo completo de integración ETL.
+3. Consulta los notebooks y scripts en `/01-First-Steps-Python/` para ejemplos prácticos de análisis de datos en Python.
 4. Apóyate en la carpeta `/Imgs/` para visualizar diagramas y procesos.
 
 ---
 
 ## Créditos y Licencia
 
-Proyecto académico desarrollado por **\JoshTVR**
+Proyecto académico desarrollado por **JoshTVR**
 
 ---
 
